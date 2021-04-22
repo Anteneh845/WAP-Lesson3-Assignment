@@ -12,10 +12,8 @@ body{
 	margin:0 30vw !important;
 	margin-top: -50px !important;
 	background-color: white;
-	/* border: 1px solid rgb(231, 231, 231); */
 	padding: 3vw;
 	z-index: 1000;
-	/* box-shadow: 0px 1px 0px 1px rgba(221, 221, 221, 0.466); */
 }
 
 header{
@@ -57,8 +55,8 @@ a{
 h3{
 	font-weight: lighter;
 	font-size: 28px;
-	
 }
+
 footer{	
 	padding: 2vw;
 }
@@ -68,6 +66,7 @@ footer{
 	color: white;
 	margin: 5px;
 	padding: 20px;
+	display: inline-block;
 }
 
 .zen-validate-html:hover, 
@@ -80,6 +79,7 @@ footer{
 
 .wrapper{
 	display: flex;
+	flex-wrap: wrap;
 }
 
 
@@ -108,4 +108,42 @@ footer{
 	font-weight: bold;
 	font-family:monospace;
 	font-size: 16px;
+}
+
+@media only screen and (max-width: 1300px) {
+	.main-body{
+		margin:0 20vw !important;
+		margin-top: -50px !important;
+	}
+	.page-title{
+		font-size: 5vw;
+	}
+	.page-title, .title-moto{
+		left: 20vw;
+	}
+	.zen-resources{
+		margin-left: 25vw;
+	}
+}
+
+
+@media only screen and (max-width: 800px) {
+	.main-body{
+		margin: 0 10vw !important;
+		margin-top: -50px !important;
+		padding: 4vw;
+	}
+	.page-title{
+		font-size: 7vw;
+		display: block;
+		top: 9vh;
+	}
+	.page-title, .title-moto{
+		position: absolute;
+		left: 15vw;
+	}
+	.design-selection,.design-archives,.zen-resources{
+			margin-left:25vw;
+	}
+	
 }
